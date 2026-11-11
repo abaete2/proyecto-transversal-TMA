@@ -1,0 +1,28 @@
+/* forzar ocupacion pantalla */ 
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
+  background-color: #fff5f5;
+  color: #1e293b;
+  overflow: hidden; /* bloqueado el scroll */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; /* cabecera arriba */
+  height: 100vh;
+}
+/* menu lateral + estructura panel central (por defecto row)*/
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* bloqueado el scroll */
+}
+
+#panel_central {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto; /* scroll vertical paneles barra interna*/
+}
